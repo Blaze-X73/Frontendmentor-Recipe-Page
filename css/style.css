@@ -1,10 +1,15 @@
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
+    --white: #ffffff;
+    --stone100: #f3e6d8;
+    --stone150: #e4ded8;
     --stone600: #5f574e;
     --stone900: #302d2c;
     --brown800: #854632;
@@ -12,9 +17,57 @@
     --rose50: #fff5fa;
 }
 
-body{
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--stone100);
+}
+
+h1,
+h2 {
+    font-family: "Young Serif";
+}
+
+h2 {
+    color: var(--brown800);
+}
+
+h4,
+span,
+li {
+    color: var(--stone600);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    font-family: Outfit, sans-serif;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    color: var(--stone900);
+}
+
+.card p {
+    color: var(--stone600);
+}
+
+.prep{
     background: var(--rose50);
+}
+
+.prep h3{
+    color: var(--rose800);
+}
+
+.prep span{
+    color: var(--stone600);
 }
