@@ -29,6 +29,7 @@ body {
 h1,
 h2 {
     font-family: "Young Serif";
+    font-weight: 400;
 }
 
 h2 {
@@ -46,6 +47,8 @@ li {
     flex-direction: column;
     background: var(--white);
     font-family: Outfit, sans-serif;
+    width: 25rem;
+    padding: 2rem;
 }
 
 .card img {
@@ -60,14 +63,82 @@ li {
     color: var(--stone600);
 }
 
-.prep{
+.headtxt {}
+
+.prep {
     background: var(--rose50);
+    width: 100%;
 }
 
-.prep h3{
+.prep ul {
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+}
+
+.prep ul li::marker {
+    color: var(--brown800);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.prep h3 {
     color: var(--rose800);
 }
 
-.prep span{
+.prep span {
     color: var(--stone600);
+}
+
+.ingred{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingred ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: inside;
+}
+
+.ingred ul li::marker {
+    color: var(--brown800);
+}
+
+.inst {
+    display: flex;
+    flex-direction: column;
+}
+
+.inst ol{
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+}
+
+.inst ol li::marker{
+    color: var(--brown800);
+    font-weight: 700;
+}
+
+.nut {
+    display: flex;
+    flex-direction: column;
+}
+
+.nut .table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.table span{
+    border-bottom: solid 0.01rem ;
+}
+
+.table .value{
+    color: var(--brown800);
+    font-weight: 700;
 }
