@@ -20,6 +20,7 @@
 body {
     display: flex;
     min-height: 100vh;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -28,7 +29,7 @@ body {
 
 h1,
 h2 {
-    font-family: "Young Serif";
+    font-family: "Young Serif", serif;
     font-weight: 400;
 }
 
@@ -44,19 +45,19 @@ li {
 }
 
 .card {
-    margin: min(4rem, 10vw);
     display: flex;
     flex-direction: column;
     background: var(--white);
     font-family: Outfit, sans-serif;
-    width: max(23.4375rem, 80vw);
-    gap: min(6.3vw, 2rem);
+    width: max(23.4375rem, 20rem + 40vw);
+    gap: min(5.9vw, 186rem);
     border-radius: min(2rem);
-
+    margin: 4rem 0;
 }
 
 .card .img {
-    padding: min(6.3vw, 2rem);
+    padding: min(6.3vw, 2rem) min(6.3vw, 2rem) 0 min(6.3vw, 2rem);
+    width: 100%;
 }
 
 .card img {
@@ -65,7 +66,11 @@ li {
 }
 
 .card .txt {
-    padding: min(6.3vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 min(6.3vw, 2rem);
+
 }
 
 .card h1 {
@@ -82,13 +87,14 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
+    padding: min(6.3vw, 2rem) 0;
 }
 
 .prep {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
-    padding: min(3.15vw, 1rem);
+    padding: min(4.15vw, 1.25rem);
     background: var(--rose50);
     border-radius: min(20%, 1.5rem);
     width: 100%;
@@ -98,6 +104,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
+    padding: 0 min(3.15vw, 1rem);
     list-style-position: inside;
 }
 
@@ -121,6 +128,9 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(6.3vw, 1rem);
+    width: 100%;
+    padding: min(6.3vw, 2rem) 0;
+    border-bottom: 0.01rem solid var(--stone150);
 }
 
 .ingred ul {
@@ -128,6 +138,7 @@ li {
     flex-direction: column;
     align-items: flex-start;
     gap: min(3.15vw, 0.5rem);
+    padding: 0 min(3.15vw, 1rem);
     list-style: inside;
 }
 
@@ -139,6 +150,8 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
+    padding: min(6.3vw, 2rem) 0;
+    border-bottom: 0.01rem solid var(--stone150);
 }
 
 .inst ol {
@@ -146,6 +159,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(2.075vw, 0.5rem);
+    padding: 0 min(3.15vw, 1rem);
 }
 
 .inst ol li {
@@ -161,16 +175,21 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
+    width: 100%;
+    padding: min(6.3vw, 2rem) 0;
 }
 
 .nut .table {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 50%);
+    align-content: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .table span {
     border-bottom: solid var(--stone150) 0.1rem;
-    padding: min(6.3vw, 0.8rem);
+    padding: min(3.15vw, 1rem) min(6.3vw, 2rem);
 }
 
 .table span:nth-child(7),
@@ -183,27 +202,24 @@ li {
     font-weight: 700;
 }
 
-
-@media (max-width: 443.2px) {
-    .card {
+@media (max-width:572px) {
+    .card{
+        padding: 0;
         border-radius: 0;
-        width: 100%;
         margin: 0;
+        width: 100%;
+    }
+    
+    .card .txt {
+        padding: (1rem);
+        width: 100%;
     }
 
     .card .img {
         padding: 0;
     }
 
-    .card img {
+    .card .img img {
         border-radius: 0;
     }
-
-    .txt {
-        padding: 0;
-    }
-
-
-
-
 }
