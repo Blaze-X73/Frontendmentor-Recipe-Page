@@ -207,7 +207,7 @@ li {
     font-weight: 700;
 }
 
-@media (max-width:572px) {
+@media (max-width:35.75rem) {
     .card{
         padding: 0;
         border-radius: 0;
@@ -216,7 +216,7 @@ li {
     }
     
     .card .txt {
-        padding: (2rem);
+        padding: 2rem;
         width: 100%;
     }
 
