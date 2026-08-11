@@ -15,6 +15,8 @@
     --brown800: #854632;
     --rose800: #7b284f;
     --rose50: #fff5fa;
+
+    --cardwidth: max(23.4375rem, 20rem + 40vw);
 }
 
 body {
@@ -49,28 +51,31 @@ li {
     flex-direction: column;
     background: var(--white);
     font-family: Outfit, sans-serif;
-    width: max(23.4375rem, 20rem + 40vw);
+    width: clamp(23.4375rem, 20rem + 40vw, 100vw);
     gap: min(5.9vw, 186rem);
     border-radius: min(2rem);
-    margin: 4rem 0;
+    margin: clamp(0.5rem, 0.2rem + 4vw, 4rem) 0;
+    transition: 0.3s ease;
 }
 
 .card .img {
-    padding: min(6.3vw, 2rem) min(6.3vw, 2rem) 0 min(6.3vw, 2rem);
+    padding: min(8.3vw, 2rem) min(8.3vw, 2rem) 0 min(8.3vw, 2rem);
     width: 100%;
+    transition: 0.3s ease;
 }
 
 .card img {
     width: 100%;
     border-radius: min(3.15vw, 0.7rem);
+    transition: 0.3s ease;
 }
 
 .card .txt {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 min(6.3vw, 2rem);
-
+    padding: 0 min(8.3vw, 2rem);
+    transition: 0.3s ease;
 }
 
 .card h1 {
@@ -87,7 +92,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
-    padding: min(6.3vw, 2rem) 0;
+    padding: min(8.3vw, 2rem) 0;
 }
 
 .prep {
@@ -129,7 +134,7 @@ li {
     flex-direction: column;
     gap: min(6.3vw, 1rem);
     width: 100%;
-    padding: min(6.3vw, 2rem) 0;
+    padding: min(8.3vw, 2rem) 0;
     border-bottom: 0.01rem solid var(--stone150);
 }
 
@@ -150,7 +155,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
-    padding: min(6.3vw, 2rem) 0;
+    padding: min(8.3vw, 2rem) 0;
     border-bottom: 0.01rem solid var(--stone150);
 }
 
@@ -176,7 +181,7 @@ li {
     flex-direction: column;
     gap: min(3.15vw, 1rem);
     width: 100%;
-    padding: min(6.3vw, 2rem) 0;
+    padding: min(8.3vw, 2rem) 0;
 }
 
 .nut .table {
@@ -189,7 +194,7 @@ li {
 
 .table span {
     border-bottom: solid var(--stone150) 0.1rem;
-    padding: min(3.15vw, 1rem) min(6.3vw, 2rem);
+    padding: min(3.15vw, 1rem) min(8.3vw, 2rem);
 }
 
 .table span:nth-child(7),
@@ -211,7 +216,7 @@ li {
     }
     
     .card .txt {
-        padding: (1rem);
+        padding: (2rem);
         width: 100%;
     }
 
