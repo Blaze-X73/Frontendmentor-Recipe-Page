@@ -10,10 +10,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -21,14 +17,15 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd/challenge/65e6f48617e502f0b6ca3d02/submit)
+- Live Site URL: (https://blaze-x73.github.io/Frontendmentor-Recipe-Page/)
 
 ## My process
+I started with the basic HTML structure and applied basic styling from top to bottom. I later put all contents of the card except the image in a section tag to allow for the image to occupy the full screen width once the width was equal to or below 572px using a media query.
 
 ### Built with
 
@@ -38,22 +35,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - CSS Grid
 - Mobile-first workflow 
 
-### What I learned
-
-### Continued development
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-
-### AI Collaboration
-
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Blaze-X73)
 
 ## Acknowledgments
-
+My Lord and Saviour Jesus Christ.
