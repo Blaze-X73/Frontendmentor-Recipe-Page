@@ -92,6 +92,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: min(3.15vw, 1rem);
+    padding: min(8.3vw, 2rem) 0;
 }
 
 .prep {
