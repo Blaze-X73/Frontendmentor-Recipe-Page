@@ -184,25 +184,26 @@ li {
     padding: min(8.3vw, 2rem) 0;
 }
 
-.nut .table {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-content: center;
-    justify-content: center;
+.nut table{
     width: 100%;
 }
 
-.table span {
-    border-bottom: solid var(--stone150) 0.1rem;
+.nut th, .nut td{
     padding: min(3.15vw, 1rem) min(8.3vw, 2rem);
+    border-bottom:0.1rem solid var(--stone150) ;
+    text-align: left;
 }
 
-.table span:nth-child(7),
-.table span:nth-child(8) {
-    border: none;
+.nut tr:nth-child(4) th, .nut tr:nth-child(4) td {
+    border-bottom: none;
 }
 
-.table .value {
+.nut th{
+    font-weight: 400;
+    color: var(--stone600);
+}
+
+.nut td{
     color: var(--brown800);
     font-weight: 700;
 }
